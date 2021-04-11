@@ -18,7 +18,7 @@ pipeline {
           }
                 }
      }
-
+}
     post {
         always {
 	emailext body: 'helle day la jenkin nha', subject: 'test jenkin', to: 'datbeo12c@gmail.com'
