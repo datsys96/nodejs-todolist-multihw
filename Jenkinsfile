@@ -13,12 +13,12 @@ pipeline {
             }
           stage("build image") {
                steps {
-                    sh 'docker build -t registry.gitlab.com/tuandat96/nodejs-todolist-multihw .'
+                    sh 'docker build -t registry.gitlab.com/tuandat96/nodejs-todolist-multihw1 .'
                }
           }
         stage('Push Image to Gitlab') {
             steps {
-                sh 'docker push registry.gitlab.com/tuandat96/nodejs-todolist-multihw'
+                sh 'docker push registry.gitlab.com/tuandat96/nodejs-todolist-multihw1'
             }
      }	
      }
