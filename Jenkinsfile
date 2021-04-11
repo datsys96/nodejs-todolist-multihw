@@ -19,7 +19,7 @@ pipeline {
                 }
           stage("test junit") {
                steps {
-                    junit 'testmulti.xml'
+		junit 'testmulti.xml'
                }
           }
      }
