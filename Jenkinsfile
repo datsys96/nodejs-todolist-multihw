@@ -17,11 +17,6 @@ pipeline {
                 waitForQualityGate abortPipeline: true
           }
                 }
-          stage("test junit") {
-               steps {
-		junit 'testmulti.xml'
-               }
-          }
      }
 
     post {
